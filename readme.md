@@ -21,14 +21,14 @@ graph TD
   GitHub[GitHub Repo]
   Actions[GitHub Actions]
   Argo[Argo CD]
-  K8s["Kubernetes Cluster (EKS)"]
-  Terraform[Terraform Infra (VPC, EKS, RDS)]
+  K8s[EKS Cluster]
+  Terraform[Terraform Infra]
   Vault[Vault + External Secrets]
   Prometheus[Prometheus + Grafana]
   ZAP[OWASP ZAP]
   Trivy[Trivy]
   Sonar[SonarQube]
-  Backstage[Backstage Developer Portal]
+  Backstage[Backstage Portal]
 
   Dev --> GitHub
   GitHub --> Actions
@@ -41,6 +41,7 @@ graph TD
   K8s --> Prometheus
   K8s --> Vault
   Dev --> Backstage
+
 
 
 ## ⚙️ Components
