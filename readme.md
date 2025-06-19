@@ -16,13 +16,12 @@ This home lab simulates a real-world **Internal Developer Platform** that enable
 
 ## 🧩 Architecture
 
-```mermaid
 graph TD
   Dev[Developer]
   GitHub[GitHub Repo]
   Actions[GitHub Actions]
   Argo[Argo CD]
-  K8s[Kubernetes Cluster (EKS)]
+  K8s["Kubernetes Cluster (EKS)"]
   Terraform[Terraform Infra (VPC, EKS, RDS)]
   Vault[Vault + External Secrets]
   Prometheus[Prometheus + Grafana]
@@ -42,7 +41,7 @@ graph TD
   K8s --> Prometheus
   K8s --> Vault
   Dev --> Backstage
-````
+
 
 ## ⚙️ Components
 
