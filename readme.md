@@ -187,26 +187,3 @@ internal-dev-platform/
 Built by [**Rahul Ambaragonda**](https://www.azuresimplified.com/)
 💬 [LinkedIn](#) | 📝 [Hashnode](https://rahulambaragonda.hashnode.dev) | 📧 [Email](mailto:rahulambaragonda0@gmail.com)
 
----
-
-Let me know if you want:
-
-* A professional-looking project banner
-* Diagrams as PNG/embedded instead of Mermaid
-* A matching GitHub repo description + tags
-* Help integrating OPA or Vault configs
-
-This README is designed to make **recruiters say yes** — it sells your architecture, not just the tools.
-
-```
-
-If you want, I can also help you with:
-
-- Creating a visually polished project banner  
-- Generating PNG architecture diagrams  
-- Drafting a compelling GitHub repo description  
-- Adding sample Vault or OPA policies  
-
-Would you like me to prepare any of these next?
-```
-
