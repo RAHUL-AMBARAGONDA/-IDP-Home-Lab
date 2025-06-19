@@ -46,20 +46,20 @@ graph TD
 
 ## ⚙️ Components
 
+|--------------------------|-----------------------------------------|----------------------------------------------------------------|
 | Layer                    | Tools                                   | Description                                                    |
 | ------------------------ | --------------------------------------- | -------------------------------------------------------------- |
-| **IaC**                  | Terraform, AWS                          | Modular VPC, EKS, RDS, IAM roles with S3 state & DRY structure |
-| **CI/CD**                | GitHub Actions, Helm                    | Secure pipeline with `validate → scan → test → deploy` flow    |
-| **GitOps**               | Argo CD                                 | Automated Kubernetes sync, drift detection, Helm releases      |
-| **Security**             | Trivy, ZAP, SonarQube, OPA              | SAST/SCA/DAST gates, branch protection, OPA CI policies        |
-| **Secrets**              | External Secrets + Vault                | Dynamic secrets injection into pods                            |
-| **Observability**        | Prometheus, Grafana, Loki, AlertManager | App metrics, logs, alerts, JVM dashboards                      |
-| **Developer Experience** | Backstage                               | Onboarding docs, CI visibility, deploy buttons                 |
-
+| IaC                      | Terraform, AWS                          | Modular VPC, EKS, RDS, IAM roles with S3 state & DRY structure |
+| CI/CD                    | GitHub Actions, Helm                    | Secure pipeline with `validate → scan → test → deploy` flow    |
+| GitOps                   | Argo CD                                 | Automated Kubernetes sync, drift detection, Helm releases      |
+| Security                 | Trivy, ZAP, SonarQube, OPA              | SAST/SCA/DAST gates, branch protection, OPA CI policies        |
+| Secrets                  | External Secrets + Vault                | Dynamic secrets injection into pods                            |
+| Observability            | Prometheus, Grafana, Loki, AlertManager | App metrics, logs, alerts, JVM dashboards                      |
+| Developer Experience     | Backstage                               | Onboarding docs, CI visibility, deploy buttons                 |
+|--------------------------|-----------------------------------------|----------------------------------------------------------------|
 ## 📁 Repository Structure
 
 ```
-.
 ├── terraform/
 │   ├── modules/        # VPC, EKS, RDS, IAM, Vault
 │   └── envs/
@@ -149,14 +149,3 @@ graph TD
 
 Built by [**Rahul Ambaragonda**](https://www.azuresimplified.com/)
 💬 [LinkedIn](#) | 📝 [Hashnode](https://rahulambaragonda.hashnode.dev) | 📧 [Email](mailto:rahulambaragonda0@gmail.com)
-
----
-
-Let me know if you want:
-
-* A professional-looking project banner
-* Diagrams as PNG/embedded instead of Mermaid
-* A matching GitHub repo description + tags
-* Help integrating OPA or Vault configs
-
-This README is designed to make **recruiters say yes** — it sells your architecture, not just the tools.
