@@ -14,36 +14,6 @@ This home lab simulates a real-world **Internal Developer Platform** that enable
 * 🔐 **Secrets Management** with External Secrets + HashiCorp Vault  
 * 🧑‍💻 **Developer Portal** using Backstage for self-service onboarding  
 
-## 🧩 Architecture
-
-graph TD
-  Dev[Developer]
-  GitHub[GitHub Repo]
-  Actions[GitHub Actions]
-  Argo[Argo CD]
-  K8s[EKS Cluster]
-  Terraform[Terraform Infra]
-  Vault[Vault + External Secrets]
-  Prometheus[Prometheus + Grafana]
-  ZAP[OWASP ZAP]
-  Trivy[Trivy]
-  Sonar[SonarQube]
-  Backstage[Backstage Portal]
-
-  Dev --> GitHub
-  GitHub --> Actions
-  Actions --> Terraform
-  Actions --> Argo
-  Argo --> K8s
-  Actions --> Trivy
-  Actions --> ZAP
-  Actions --> Sonar
-  K8s --> Prometheus
-  K8s --> Vault
-  Dev --> Backstage
-
-
-
 ## ⚙️ Components
 
 | Layer                    | Tools                                   | Description                                                    |
