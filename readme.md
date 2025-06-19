@@ -1,6 +1,4 @@
-Sure! Here's the full professional-grade `README.md` file content for your **Internal Developer Platform Home Lab**, ready to copy and use in your GitHub repo:
 
-````markdown
 # 🛠️ Internal Developer Platform (IDP) Home Lab
 
 > **An end-to-end DevSecOps & Platform Engineering project designed for multi-team, multi-environment microservice delivery with GitOps, security gates, and observability built-in.**
@@ -61,24 +59,61 @@ graph TD
 ## 📁 Repository Structure
 
 ```
-.
+internal-dev-platform/
+├── README.md
+├── architecture/
+│   └── platform-diagram.png
 ├── terraform/
-│   ├── modules/        # VPC, EKS, RDS, IAM, Vault
-│   └── envs/
-│       ├── dev/
-│       ├── staging/
-│       └── prod/
-├── helm-charts/
-│   └── microservice/
+│   ├── env/
+│   │   ├── dev/
+│   │   │   ├── main.tf
+│   │   │   ├── variables.tf
+│   │   │   └── dev.tfvars
+│   └── modules/
+│       ├── eks/
+│       │   ├── main.tf
+│       │   ├── variables.tf
+│       │   └── outputs.tf
+│       ├── vpc/
+│       │   ├── main.tf
+│       │   ├── variables.tf
+│       │   └── outputs.tf
+│       ├── ecr/
+│       ├── rds/
+│       └── vault/
 ├── kubernetes/
-│   └── base/
-├── .github/workflows/
-│   └── ci-cd.yml
+│   ├── base/
+│   │   ├── namespaces/
+│   │   ├── networkpolicies/
+│   │   ├── rbac/
+│   │   └── storageclass/
+│   ├── apps/
+│   │   └── team-a-app.yaml
+│   ├── gitops/
+│   │   └── argo-apps/
+│   ├── security/
+│   │   ├── trivy-scans/
+│   │   ├── kyverno-policies/
+│   │   └── falco-config/
+│   ├── monitoring/
+│   │   ├── prometheus/
+│   │   ├── grafana/
+│   │   └── alertmanager/
+│   └── secrets/
+│       └── external-secrets-config/
 ├── backstage/
-│   └── catalog-info.yaml
+│   ├── scaffolder-templates/
+│   └── plugins/
+├── cicd/
+│   ├── github-actions/
+│   └── gitlab-ci/
 ├── scripts/
-│   └── automation.sh
-└── README.md
+│   ├── bootstrap.sh
+│   └── destroy.sh
+├── docs/
+│   └── sops.md
+└── Makefile
+
 ```
 
 ## 🚀 How to Run
