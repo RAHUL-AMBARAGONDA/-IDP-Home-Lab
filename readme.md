@@ -1,6 +1,3 @@
-Here’s a complete, professional-grade `README.md` for your **Internal Developer Platform (IDP)** home lab. It’s designed to impress recruiters, hiring managers, and peers by showcasing the project’s technical depth, security focus, and impact:
-
----
 
 # 🛠️ Internal Developer Platform (IDP) Home Lab
 
@@ -19,7 +16,7 @@ This home lab simulates a real-world **Internal Developer Platform** that enable
 
 ## 🧩 Architecture
 
-```mermaid
+---
 graph TD
   Dev[Developer]
   GitHub[GitHub Repo]
